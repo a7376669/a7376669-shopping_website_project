@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+  <link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.1.0/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.1.0/dist/sweetalert2.css">
+
+
+
+</head>
+
+<body>
+    <?php 
+    if(isset($_POST['A'])&&$_SERVER['REQUEST_METHOD'] == 'POST'){
+        mb_internal_encoding("utf-8");
+        $to="4a690158@stust.edu.tw";
+        $subject=mb_encode_mimeheader($_POST['mean'],"utf-8");
+        $message=$_POST['textarea'];
+        $headers="MIME-Version: 1.0\r\n";
+        $headers.="Content-type: text/html; charset=utf-8\r\n";
+        $headers.="From:".mb_encode_mimeheader($_POST['email'],"utf-8")."<寄件者電子郵件>\r\n";
+        mail($to,$subject,$message,$headers);
+    }
+    ?>
+  <div class="py-5 text-center text-md-right" style="background-image: url(img/index2-1.jpeg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed; width:100%;overflow-x:hidden;">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="inde1.php"><h1 class="display-4 text-warning" ;><span class="oi oi-home"></span>
+          首頁
+        </h1>
+      </a>
+      </div>
+      <div class="col-md-5"></div>
+      <div class="col-md-4">
+        <ul class="nav nav-pills">
+          <li class="nav-item"> <a style="font-size: 20px; font-weight:bold" href="login.php"  class="nav-link text-warning">登入</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;"  href="inde.php"  class="nav-link text-warning">商品</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;" class="nav-link text-warning" href="index1.html">關於我們</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;" href="index2.html"  class="nav-link text-warning">聯繫我們</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12"></div>
+          <p class="lead mb-5 text-warning" style="text-align: center;font-weight:bold;">有甚麼事都可以來跟我們說喔<br>談談你的問題</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-4">聯繫我們的團隊</h1>
+          <p style="font-size: 25px">我們在這裡<br>在這裡等你</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form id="c_form-h" class="post">
+              <div class="form-group row"> <label for="inputmailh" class="col-2 col-form-label">電子郵件</label>
+                <div class="col-10">
+                  <input type="email" name="email" class="form-control" id="inputmailh" placeholder="mail@example.com"> </div>
+              </div>
+              <div class="form-group row"> <label for="inputpasswordh" class="col-2 col-form-label">名稱</label>
+                <div class="col-10">
+                  <input type="text" name="text" class="form-control" id="inputpasswordh" placeholder="名稱"> </div>
+              </div>
+              <div class="form-group row"> <label for="inputpasswordh" class="col-2 col-form-label">主旨</label>
+                <div class="col-10">
+                  <input type="text" name="mean" class="form-control" id="inputpasswordh" placeholder="主旨"> </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputpasswordh" class="col-2 col-form-label"></label>
+                  <div class="col-10">
+                    <textarea rows="5" cols="52" name="textarea"></textarea>
+                  </div>
+                <div style="margin:0 auto;">
+                  <button type="button" class="btn btn-primary" name="A">提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+            <div class="col-md-6">
+              <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.954173111329!2d120.22429991531803!3d23.025454784951513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e771f2995cba5%3A0x3bfd449f1e46ffef!2z5Y2X6Ie656eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1600368708330!5m2!1szh-TW!2stw" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 text-center">
+      <div class="container">
+        <h1 class="display-4">我們的團隊</h1>
+        <div class="row">
+          <div class="col-6 col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="img/messageImage_1600525633547.jpg" width="200" alt="Card image cap">
+            <h4> <b>林柏駿</b> </h4>
+            <p class="mb-3">組長</p>
+            <p class="mb-0">我沒用</p>
+
+          </div>
+          <div class="col-6 col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="img/3.0.png" width="200" alt="Card image cap">
+            <h4> <b>戴嘉佑</b> </h4>
+            <p class="mb-3">程式設計師</p>
+            <p class="mb-0">真帥</p>
+          </div>
+          <div class="col-6 col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="img/messageImage_1600525932237.jpg" width="200">
+            <h4> <b>游景宏</b> </h4>
+            <p class="mb-3">程式設計師</p>
+            <p class="mb-0"> 好人</p>
+          </div>
+          <div class="col-6 col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="img/messageImage_1600369773924.jpg" width="200">
+            <h4> <b>魏貽安</b> </h4>
+            <p class="mb-3">程式測試員</p>
+            <p class="mb-0"> 大家加油</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-muted py-5" style="">
+      <div class="container">
+        <p class="float-right">
+          <a style="color: black;" href="#">到最上面</a>
+        </p>
+        <p>有甚麼問題請聯絡4A690022@stust.edu.tw&nbsp; <br>沒什麼問題 就不要來煩我 謝謝配合 &gt;_0 。</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
+  </div>
+  <!-- <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo> -->
+</body>
+<script>
+</script>
+</html>

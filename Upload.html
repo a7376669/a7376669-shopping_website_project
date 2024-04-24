@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+  <link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.1.0/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.1.0/dist/sweetalert2.css">
+</head>
+
+<body>
+  <div class="text-center text-md-right py-0" style="background-image: url(img/index3-2.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed;">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="inde.html">
+          <h1 class="display-4 text-warning" ;=""><span class="oi oi-home"></span> 首頁 </h1>
+        </a>
+        <div class="col-md-12">
+          <p style="font-size: 30px; color: GhostWhite;font-weight:bold;">上傳檔案</p>
+        </div>
+      </div>
+      <div class="col-md-5"></div>
+      <div class="col-md-4">
+        <ul class="nav nav-pills">
+          <li class="nav-item"> <a style="font-size: 20px; font-weight:bold" href="login.php" class="nav-link text-warning">登入</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;" href="index.html" class="nav-link text-warning">商品</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;" class="nav-link text-warning" href="index1.html">關於我們</a> </li>
+          <li class="nav-item"> <a style="font-size: 20px;font-weight:bold;" href="index2.html" class="nav-link text-warning">聯繫我們</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-6 py-5" style="background-image: url(img/index3-2.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2 text-secondary">
+            <h3 class="text-white" contenteditable="true">商品</h3>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h3 class="text-white" contenteditable="true">商品資料</h3>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <form action="Upload.php" method="post">
+ <div class="text-center py-6 py-5" style="background-image: url(img/index3-2.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed;">
+    <div class="row">
+      <div style="color:#FFFFFF;font-size:25px" class="col-md-2">
+        <img id="demo" style="width: 300px;height: 300px;overflow: hidden;">
+      </div>
+      <div class="col-md-2" style=""></div>
+      <div class="col-md-2" style="">
+        <p class="text-white">商品名稱:<input type="text" name="productname"></p><h3 class="text-white" contenteditable="true" ></h3>
+        <p class="text-white">商品價格:<input type="text" name="productprice"></p><h3 class="text-white" contenteditable="true" ></h3>
+        <p class="text-white">商品數量:<input type="text" name="categoryid"></p><h3 class="text-white" contenteditable="true" ></h3>
+        <p class="text-white">商品圖片:<input type="text" name="productimages"></p><h3 class="text-white" contenteditable="true" ></h3>
+        <p class="text-white">商品備註:<input type="text" name="description"></p><h3 class="text-white" contenteditable="true" ></h3>
+      </div>
+	  <p><input type="submit" name="submit" value="上傳檔案"></p>
+	  </form>
+      <div class="col-md-2" style=""></div>
+      <div class="col-md-2" style=""></div>
+      <div class="col-md-4" style=""></div>
+    </div>
+  </div>
+
+  <div class="text-center py-6 py-5" style="background-image: url(img/index3-2.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed;">
+    <div class="row">
+      <div style="color:#FFFFFF;font-size:25px" class="col-md-2">
+        <input id="file" type="file">
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2"></div>
+    <form action="signup.php" method="post">
+      <div class="col-md-2">
+        <button onclick="ontext()" type="submit" name="submit" value="上傳檔案" class="btn btn-primary" >上傳</button>
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="py-0" style="background-image: url(img/index3-2.jpg);	background-position: right bottom;	background-size: cover;	background-repeat: repeat; background-attachment: fixed;">
+    <footer class="text-muted py-5" style="">
+      <div class="container">
+        <p class="float-right">
+          <a style="font-size: 20px; color: GhostWhite;" href="#">到最上面</a>
+        </p>
+        <p style="font-size: 20px; color: GhostWhite;font-weight:bold;">有甚麼問題請聯絡4A690022@stust.edu.tw&nbsp; <br>沒什麼問題 就不要來煩我 謝謝配合 &gt;_0 。</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
+  </div>
+  <script>
+    function ontext() {
+      Swal.fire({
+        position: 'middle-end',
+        icon: 'success',
+        title: '上傳成功',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+    $('#file').change(function() {
+      var file = $('#file')[0].files[0];
+      var reader = new FileReader;
+      reader.onload = function(e) {
+        $('#demo').attr('src', e.target.result);
+      };
+      reader.readAsDataURL(file);
+    });
+  </script>
+
+</body>
+
+</html>
